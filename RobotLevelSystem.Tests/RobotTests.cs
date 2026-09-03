@@ -43,4 +43,17 @@ public class RobotTests
         // Assert
         Assert.Equal(2, robot.Level);
     }
+
+    [Fact]
+    public void AddExperience_WithoutEnoughExperience_KeepsCurrentLevel()
+    {
+        // Arrange
+        var robot = new Robot();
+
+        // Act
+        robot.AddExperience(99);
+
+        // Assert
+        Assert.Equal(1, robot.Level);
+    }
 }
