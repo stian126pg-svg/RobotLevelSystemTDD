@@ -8,5 +8,6 @@ public class Robot
 
     public void AddExperience(int amount)
     {
+        ExperiencePoints += amount;
     }
 }
