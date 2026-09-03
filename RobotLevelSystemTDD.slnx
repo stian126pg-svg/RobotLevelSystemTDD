@@ -1,2 +1,4 @@
 <Solution>
+  <Project Path="RobotLevelSystem.Tests/RobotLevelSystem.Tests.csproj" />
+  <Project Path="RobotLevelSystem/RobotLevelSystem.csproj" />
 </Solution>
