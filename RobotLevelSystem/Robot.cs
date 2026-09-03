@@ -2,6 +2,8 @@
 
 public class Robot
 {
+    private const int ExperienceRequiredToLevelUp = 100;
+
     public int Level { get; private set; } = 1;
 
     public int ExperiencePoints { get; private set; }
@@ -10,7 +12,7 @@ public class Robot
     {
         ExperiencePoints += amount;
 
-        if (ExperiencePoints >= 100)
+        if (ExperiencePoints >= ExperienceRequiredToLevelUp)
         {
             Level++;
         }
