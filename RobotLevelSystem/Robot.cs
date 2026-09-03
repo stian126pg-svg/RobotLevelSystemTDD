@@ -9,6 +9,10 @@ public class Robot
     public void AddExperience(int amount)
     {
         ExperiencePoints += amount;
-        Level++;
+
+        if (ExperiencePoints >= 100)
+        {
+            Level++;
+        }
     }
 }
