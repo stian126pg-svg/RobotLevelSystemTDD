@@ -2,5 +2,5 @@
 
 public class Robot
 {
-    public int Level { get; }
+    public int Level { get; } = 1;
 }
